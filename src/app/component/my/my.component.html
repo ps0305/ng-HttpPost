@@ -1,5 +1,5 @@
 <input type="text" [(ngModel)]="my-model">
-<button (click)="clickMe"({'message':my-model})>Send</button>
+<button (click)="clickMe({'message':my-model})">Send</button>
 
 <br><br>
-<h1>{{data}}</h1>
+<h1>{{data | json}}</h1>
