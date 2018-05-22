@@ -16,8 +16,8 @@ export class MyService {
   public myFun(obj):any{
     return this._http.post("http://test-routes.herokuapp.com/test/uppercase",obj)
     //map to catch the positive response from server
-    .map((response:Response)=>{
-      return response.json();
+    .map((res:Response)=>{
+      return res.json();
     })
     .catch(this._handleError);
   }
